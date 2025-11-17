@@ -75,5 +75,11 @@ $outro = [
         <p><?= $verse1[14] . $nouns[3] . $verse1[15] . $verbs[8] . $verse1[16] . $verbs[9] . $verse1[17] . $verbs[10] . $verse1[18] . $nounDays ?></p>
     
         <h3>Chorus</h3>
+        <p><?= $chorus[0] . $verbs[11] . $chorus[1] ?></p>
+        <p><?= $chorus[2] . $verbs[12] . $chorus[3] ?></p>
+        <p><?= $chorus[4] . $nounDays . $chorus[5] ?></p>
+        <p><?= $chorus[6] . $nounDays . $chorus[7] . $verbs[13] . $chorus[8] . $verbs[14] . $chorus[9] ?></p>
+        <p><?= $chorus[10] . $verbs[14] . $chorus[9] ?></p>
     </body>
+
 </html>
