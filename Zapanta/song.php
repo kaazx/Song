@@ -1,7 +1,7 @@
 <?php
 $title = "My Mind Is a Maze";
 $artist = "Alannah Guiney";
-$mood = "reflective";
+$mood = "pensive";
 $verseCount = 1 + '1';
 $chorusCount = true;
 $nounDays = "days";
@@ -72,45 +72,66 @@ $outro = [
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>My Mind Is a Maze</title>
-        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                font-family: 'Times New Roman', serif;
+                margin: 20px;
+                line-height: 1.6;
+                background-color: #fafaf8;}
+            main {
+                background-color: #efede6;
+                width: 50%;
+                margin: auto;
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;}
+            h1 {color: #676663;}
+            h2, h3 {
+                color: #a1998f;
+                font-weight: bold;}
+            h2 {text-shadow: 1px 1px 2px #d3d1c8;}
+            p {
+                color: #4a4a48;
+                margin-bottom: 10px;}
+        </style>
     </head>
     <body>
-        <h1><?php echo $title; ?></h1>
-        <h2><i>by</i> <?php echo $artist; ?></h2>
-        <p>My Mind Is a Maze is a <?php echo $mood; ?> song. It has <?php echo $verseCount; ?> verses and <?php echo $chorusCount; ?> chorus.</p>
+        <main>
+            <h1><?php echo $title; ?></h1>
+            <h2><i>by</i> <?php echo $artist; ?></h2>
+            <p>"My Mind Is a Maze" is a <?php echo $mood; ?> song. It has <?php echo $verseCount; ?> verses and <?php echo $chorusCount; ?> chorus.</p>
+            
+            <h3>[Verse 1]</h3>
+            <p><?= $verse1[0] . $time1 . $verse1[1] ?><?= $verbs[0] ?><?= $verse1[2] ?><?= $nouns[0] ?></p>
+            <p><?= $verbs[1] . $verse1[3] . $verbs[2] ?></p>
+            <p><?= $verse1[4] . $verbs[3] . $verse1[5] . $nounMind . $verse1[6] . $verbs[4] ?></p>
+            <p><?= $verse1[7] . $verbs[5] . $verse1[8] . $nouns[1] . $verse1[9] . $nounMaze . $verse1[10] . $nounMind ?></p>
+            <p><?= $verbs[6] . $verse1[11] . $nouns[2] . $verse1[12] . $verbs[7] . $verse1[13]?></p>
+            <p><?= $verse1[14] . $nouns[3] . $verse1[15] . $verbs[8] . $verse1[16] . $verbs[9] . $verse1[17] . $verbs[10]?></p>
+            <p><?= $verbs[6] . $verse1[11] . $nouns[2] . $verse1[12] . $verbs[7] . $verse1[13]?></p>
+            <p><?= $verse1[14] . $nouns[3] . $verse1[15] . $verbs[8] . $verse1[16] . $verbs[9] . $verse1[17] . $verbs[10] . $verse1[18] . $nounDays ?></p>
         
-        <h3>Verse 1</h3>
-        <p><?= $verse1[0] . $time1 . $verse1[1] ?><?= $verbs[0] ?><?= $verse1[2] ?><?= $nouns[0] ?></p>
-        <p><?= $verbs[1] . $verse1[3] . $verbs[2] ?></p>
-        <p><?= $verse1[4] . $verbs[3] . $verse1[5] . $nounMind . $verse1[6] . $verbs[4] ?></p>
-        <p><?= $verse1[7] . $verbs[5] . $verse1[8] . $nouns[1] . $verse1[9] . $nounMaze . $verse1[10] . $nounMind ?></p>
-        <p><?= $verbs[6] . $verse1[11] . $nouns[2] . $verse1[12] . $verbs[7] . $verse1[13]?></p>
-        <p><?= $verse1[14] . $nouns[3] . $verse1[15] . $verbs[8] . $verse1[16] . $verbs[9] . $verse1[17] . $verbs[10]?></p>
-        <p><?= $verbs[6] . $verse1[11] . $nouns[2] . $verse1[12] . $verbs[7] . $verse1[13]?></p>
-        <p><?= $verse1[14] . $nouns[3] . $verse1[15] . $verbs[8] . $verse1[16] . $verbs[9] . $verse1[17] . $verbs[10] . $verse1[18] . $nounDays ?></p>
+            <h3>[Chorus]</h3>
+            <p><?= $chorus[0] . $verbs[11] . $chorus[1] ?></p>
+            <p><?= $chorus[2] . $verbs[12] . $chorus[3] ?></p>
+            <p><?= $chorus[4] . $nounDays . $chorus[5] ?></p>
+            <p><?= $chorus[6] . $nounDays . $chorus[7] . $verbs[13] . $chorus[8] . $verbs[14] . $chorus[9] ?></p>
+            <p><?= $chorus[10] . $verbs[14] . $chorus[9] ?></p>
     
-        <h3>Chorus</h3>
-        <p><?= $chorus[0] . $verbs[11] . $chorus[1] ?></p>
-        <p><?= $chorus[2] . $verbs[12] . $chorus[3] ?></p>
-        <p><?= $chorus[4] . $nounDays . $chorus[5] ?></p>
-        <p><?= $chorus[6] . $nounDays . $chorus[7] . $verbs[13] . $chorus[8] . $verbs[14] . $chorus[9] ?></p>
-        <p><?= $chorus[10] . $verbs[14] . $chorus[9] ?></p>
-
-        <h3>Verse 2</h3>
-        <p><?= $verse2[0] . $time2 . $verse2[1] . $verbs[15] . $verse2[2] . $verbs[16] ?></p>
-        <p><?= $verse2[3] . $verbs[17] . $verse2[4] . $nouns[4] . ' ' . $verbIs . ' ' . $verbs[18] ?></p>
-        <p><?= $verse2[5] . $verbs[19] . $verse2[6] . $nouns[5] . ', ' . $verbs[20] . $verse2[7] . $verbs[21] . $verse2[8] ?></p>
-        <p><?= $verse2[9] . $nounMind . $verse2[10] . $nounMind . ' ' . $verbIs . ' ' . $verse2[11] . $nounMaze ?></p>
-
-        <h3>Outro</h3>
-        <p><?= $outro[0] . $nounMaze ?></p>
-        <p><?= $outro[1] . $nounMind . ' ' . $verbIs . ' ' . $outro[2] . $nounMaze?></p>
-        <p><?= $outro[1] . $nounMind . ' ' . $verbIs . ' ' . $outro[2] . $nounMaze?></p>
-        <p><?= $outro[3] . $verbs[22] . $outro[4] ?></p>
+            <h3>[Verse 2]</h3>
+            <p><?= $verse2[0] . $time2 . $verse2[1] . $verbs[15] . $verse2[2] . $verbs[16] ?></p>
+            <p><?= $verse2[3] . $verbs[17] . $verse2[4] . $nouns[4] . ' ' . $verbIs . ' ' . $verbs[18] ?></p>
+            <p><?= $verse2[5] . $verbs[19] . $verse2[6] . $nouns[5] . ', ' . $verbs[20] . $verse2[7] . $verbs[21] . $verse2[8] ?></p>
+            <p><?= $verse2[9] . $nounMind . $verse2[10] . $nounMind . ' ' . $verbIs . ' ' . $verse2[11] . $nounMaze ?></p>
+    
+            <h3>[Outro]</h3>
+            <p><?= $outro[0] . $nounMaze ?></p>
+            <p><?= $outro[1] . $nounMind . ' ' . $verbIs . ' ' . $outro[2] . $nounMaze?></p>
+            <p><?= $outro[1] . $nounMind . ' ' . $verbIs . ' ' . $outro[2] . $nounMaze?></p>
+            <p><?= $outro[3] . $verbs[22] . $outro[4] ?></p>
+        </main>
     </body>
 </html>
-
-
-
 
