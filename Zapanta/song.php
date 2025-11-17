@@ -63,10 +63,11 @@ $verse2 = [
     " today, welcome, my ", //10
     " a "]; //11
 $outro = [
-    "Oh, a maze", //0
-    "My mind is a maze", //1
-    "My mind is a maze", //2
-    "And I get lost sometimes"]; //3
+    "Oh, a ", //0
+    "My ", //1
+    " a ", //2
+    "And I get ", //3
+    " sometimes"]; //4
 ?>
 <!DOCTYPE html>
 <html>
@@ -101,8 +102,15 @@ $outro = [
         <p><?= $verse2[3] . $verbs[17] . $verse2[4] . $nouns[4] . ' ' . $verbIs . ' ' . $verbs[18] ?></p>
         <p><?= $verse2[5] . $verbs[19] . $verse2[6] . $nouns[5] . ', ' . $verbs[20] . $verse2[7] . $verbs[21] . $verse2[8] ?></p>
         <p><?= $verse2[9] . $nounMind . $verse2[10] . $nounMind . ' ' . $verbIs . ' ' . $verse2[11] . $nounMaze ?></p>
+
+        <h3>Outro</h3>
+        <p><?= $outro[0] . $nounMaze ?></p>
+        <p><?= $outro[1] . $nounMind . ' ' . $verbIs . ' ' . $outro[2] . $nounMaze?></p>
+        <p><?= $outro[1] . $nounMind . ' ' . $verbIs . ' ' . $outro[2] . $nounMaze?></p>
+        <p><?= $outro[3] . $verbs[22] . $outro[4] ?></p>
     </body>
 </html>
+
 
 
 
