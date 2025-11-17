@@ -97,9 +97,12 @@ $outro = [
         <p><?= $chorus[10] . $verbs[14] . $chorus[9] ?></p>
 
         <h3>Verse 2</h3>
-        <p><?=  ?></p>
+        <p><?= $verse2[0] . $time2 . $verse2[1] . $verbs[15] . $verse2[2] . $verbs[16] ?></p>
+        <p><?= $verse2[3] . $verbs[17] . $verse2[4] . $nouns[4] . ' ' . $verbIs . ' ' . $verbs[18] ?></p>
+        <p><?= $verse2[5] . $verbs[19] . $verse2[6] . $nouns[5] . ', ' . $verbs[20] . $verse2[7] . $verbs[21] . $verse2[8] ?></p>
+        <p><?= $verse2[9] . $nounMind . $verse2[10] . $nounMind . ' ' . $verbIs . ' ' . $verse2[11] . $nounMaze ?></p>
     </body>
-
 </html>
+
 
 
