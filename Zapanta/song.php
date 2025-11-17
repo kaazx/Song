@@ -50,10 +50,18 @@ $chorus = [
     " me", //9
     "They "]; //10
 $verse2 = [
-    "Now it's almost 5 a.m. and I'm still up, I'm still thinking", //0
-    "I got so much to do right now, procrastination is overtaking", //1
-    "Up! Write a useless songs, waiting for you to come along again", //2
-    "Into my mind today, welcome, my mind is a maze"]; //3
+    "Now it's almost ", //0
+    " a.m. and I'm ", //1
+    "I'm ", //2
+    "I got so much to ", //3
+    " right now, ", //4
+    "Up! ", //5
+    " a useless ", //6
+    " for you to ", //7
+    " along again", //8
+    "Into my ", //9
+    " today, welcome, my ", //10
+    " a "]; //11
 $outro = [
     "Oh, a maze", //0
     "My mind is a maze", //1
@@ -70,6 +78,7 @@ $outro = [
         <h1><?php echo $title; ?></h1>
         <h2><i>by</i> <?php echo $artist; ?></h2>
         <p>My Mind Is a Maze is a <?php echo $mood; ?> song. It has <?php echo $verseCount; ?> verses and <?php echo $chorusCount; ?> chorus.</p>
+        
         <h3>Verse 1</h3>
         <p><?= $verse1[0] . $time1 . $verse1[1] ?><?= $verbs[0] ?><?= $verse1[2] ?><?= $nouns[0] ?></p>
         <p><?= $verbs[1] . $verse1[3] . $verbs[2] ?></p>
@@ -86,7 +95,11 @@ $outro = [
         <p><?= $chorus[4] . $nounDays . $chorus[5] ?></p>
         <p><?= $chorus[6] . $nounDays . $chorus[7] . $verbs[13] . $chorus[8] . $verbs[14] . $chorus[9] ?></p>
         <p><?= $chorus[10] . $verbs[14] . $chorus[9] ?></p>
+
+        <h3>Verse 2</h3>
+        <p><?=  ?></p>
     </body>
 
 </html>
+
 
