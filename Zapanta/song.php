@@ -1,22 +1,32 @@
 <?php
+//string variables
 $title = "My Mind Is a Maze";
 $artist = "Alannah Guiney";
 $mood = "pensive";
+
+//type juggling examples
 $verseCount = 1 + '1';
 $chorusCount = true;
+
+//repeating nouns and verbs across the lyrics
 $nounDays = "days";
 $nounMind = "mind";
 $nounMaze = "maze";
 $verbIs = "is";
+
+//variables that apply operators
 $timeNum = 2;
 $time1 = $timeNum * $timeNum;
 $time2 = $timeNum + 3;
+
+//array for nouns and verbs
 $nouns = ["bed", "feelings", "Minotaur", "list", "procrastination", "songs"];
 $verbs = [
     "laying", "Contemplating", "said", "cross", "inclined", "write", "Guarded", "watch",
     "consists", "overthinking", "reminiscing", "change", "gets", "know", "hate",
-    "still up", "still thinking", "do", "overtaking", "Write", "waiting", "come", "lost"
-];
+    "still up", "still thinking", "do", "overtaking", "Write", "waiting", "come", "lost"];
+
+//for verse 1, chorus, verse 2, and outro, i sliced the lyrics into indexed arrays so i can insert the nouns and verbs in between the lyrics
 $verse1 = [
     "It's currently ", //0
     " a.m., I'm ", //1
@@ -98,11 +108,14 @@ $outro = [
         </style>
     </head>
     <body>
+        <!-- for displaying the whole lyrics, i completely utilized concatenation for a readable and neater lines of code -->
         <main>
+            <!-- shows the use of echo -->
             <h1><?php echo $title; ?></h1>
             <h2><i>by</i> <?php echo $artist; ?></h2>
             <p>"My Mind Is a Maze" is a <?php echo $mood; ?> song. It has <?php echo $verseCount; ?> verses and <?php echo $chorusCount; ?> chorus.</p>
-            
+
+            <!-- uses shorthand for better readability -->
             <h3>[Verse 1]</h3>
             <p><?= $verse1[0] . $time1 . $verse1[1] ?><?= $verbs[0] ?><?= $verse1[2] ?><?= $nouns[0] ?></p>
             <p><?= $verbs[1] . $verse1[3] . $verbs[2] ?></p>
@@ -134,4 +147,5 @@ $outro = [
         </main>
     </body>
 </html>
+
 
