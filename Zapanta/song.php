@@ -38,11 +38,17 @@ $verse1 = [
     " and ", //17
     " of "]; //18
 $chorus = [
-    "Where simple matters could change our afters", //0
-    "And sometimes it gets hazy", //1
-    "Justifies the days that I'm lazy", //2
-    "The days where I know they all hate me", //3
-    "They hate me"]; //4
+    "Where simple matters could ", //0
+    " our afters", //1
+    "And sometimes it ", //2
+    " hazy", //3
+    "Justifies the ", //4
+    " that I'm lazy", //5
+    "The ", //6
+    " where I ", //7
+    " they all ", //8
+    " me", //9
+    "They "]; //10
 $verse2 = [
     "Now it's almost 5 a.m. and I'm still up, I'm still thinking", //0
     "I got so much to do right now, procrastination is overtaking", //1
@@ -83,3 +89,4 @@ $outro = [
     </body>
 
 </html>
+
